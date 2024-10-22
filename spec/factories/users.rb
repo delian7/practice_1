@@ -3,7 +3,7 @@
 FactoryBot.define do
   factory :user do
     name { 'MyString' }
-    email { 'MyString' }
+    email { Faker::Internet.email }
     password_digest { 'MyString' }
   end
 end
